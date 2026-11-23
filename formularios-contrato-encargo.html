@@ -1,0 +1,38 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contrato de encargo del tratamiento (Formularios)</title><style>
+:root{--bg:#f7f8f6;--paper:#fff;--ink:#1f2622;--muted:#5d6b63;--line:#dfe5e0;--accent:#2e5a3c;--warn:#8a4b00}
+@media (prefers-color-scheme:dark){:root{--bg:#141917;--paper:#1b221f;--ink:#e6ece8;--muted:#a3b0a8;--line:#2c3732;--accent:#8fc7a1;--warn:#ffb86b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:24px 16px 64px}
+main{max-width:760px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px}
+h1{font-size:1.7rem;line-height:1.2;margin:0 0 4px}h2{font-size:1.15rem;margin:28px 0 8px;color:var(--accent)}
+.meta{color:var(--muted);font-size:.9rem;margin:0 0 18px}nav a{margin-right:14px;color:var(--accent)}ul{padding-left:20px}
+li{margin:4px 0}.nota{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.borrador{border-color:var(--warn);color:var(--warn)}a{color:var(--accent);overflow-wrap:anywhere}
+</style></head><body><main>
+<nav><a href="index.html">← Todas las apps</a></nav>
+<h1>Contrato de encargo del tratamiento (Formularios)</h1>
+<p class="meta">Versión 1 · 19 de octubre de 2026</p>
+<p class="nota borrador"><strong>Borrador:</strong> faltan el nombre, el NIF y el domicilio del titular, y la revisión de un abogado.</p>
+<div class="nota">Para Conecta y Mis dispositivos actuamos como encargados del tratamiento del profesional (art. 28 RGPD). El servidor solo guarda sobres cifrados que no puede leer y los borra al recogerse.</div>
+<h2>Partes y objeto</h2>
+<p>Responsable del tratamiento: el profesional, despacho o centro que usa una app de la familia Formularios («el responsable»).</p>
+<p>Encargado del tratamiento: el titular de Formularios (correo: <a href="mailto:rmatizaldana@gmail.com">rmatizaldana@gmail.com</a>) («el encargado»).</p>
+<p>Este contrato cumple el artículo 28 del Reglamento (UE) 2016/679 (RGPD) y el artículo 33 de la Ley Orgánica 3/2018. Forma parte de las condiciones de uso de Formularios y se acepta con ellas en la app. Si lo necesitas firmado por separado, pídenoslo en <a href="mailto:rmatizaldana@gmail.com">rmatizaldana@gmail.com</a>.</p>
+<h2>Qué tratamos y para qué</h2>
+<p>Servicios: Conecta (enviar y recibir información entre el profesional y sus pacientes o clientes) y Mis dispositivos (pasar al ordenador lo capturado con el móvil).</p>
+<p>Finalidad: transportar y guardar temporalmente mensajes hasta que el destinatario los recoge, y enviar avisos al móvil.</p>
+<p>Datos que trata el servidor:</p>
+<ul><li>Sobres cifrados de extremo a extremo (X25519 y AES-256-GCM). Su contenido puede incluir datos de salud u otros datos personales, pero el encargado no tiene las claves y no puede leerlo.</li><li>Un identificador de cada instalación, las claves públicas de cada enlace y el token de notificaciones de los móviles de los pacientes.</li><li>Para los recordatorios de cita: la hora y un texto neutro con el nombre del profesional, que se borran al enviarse.</li></ul>
+<p>Personas afectadas: los pacientes o clientes del responsable y el propio responsable.</p>
+<p>Duración: mientras el responsable use estos servicios. Los sobres se borran al recogerse y, como mucho, a los 30 días.</p>
+<h2>Obligaciones del encargado</h2>
+<ul><li>Tratar los datos solo siguiendo las instrucciones documentadas del responsable, que son las de este contrato y las acciones que hace en la app, y no usarlos para ningún otro fin.</li><li>Garantizar que quien acceda al servidor está obligado a la confidencialidad.</li><li>Aplicar las medidas de seguridad del artículo 32 RGPD: cifrado de extremo a extremo, conexiones TLS, minimización de datos, borrado automático y acceso restringido a la administración del servidor.</li><li>Ayudar al responsable a atender los derechos de las personas (acceso, supresión, etc.) y a cumplir los artículos 32 a 36 RGPD, con la información de que disponga.</li><li>Notificar al responsable, sin dilación indebida y en un plazo máximo de 48 horas desde que la conozca, cualquier violación de la seguridad que afecte a sus datos, con la información disponible para que el responsable pueda notificarla a la autoridad.</li><li>Al terminar el servicio, borrar los datos que queden en el servidor. Desconectar a un paciente o dispositivo borra al momento lo pendiente.</li><li>Poner a disposición del responsable la información necesaria para demostrar el cumplimiento de este contrato y permitir las auditorías razonables que pida, avisando con antelación.</li><li>Avisar al responsable si una instrucción le parece contraria a la ley.</li></ul>
+<h2>Subencargados</h2>
+<p>El responsable autoriza de forma general a estos subencargados:</p>
+<ul><li>Cloudflare, Inc.: el servidor y su base de datos (ubicada en Europa occidental).</li><li>Google LLC (Firebase Cloud Messaging): los avisos a los móviles de los pacientes, que nunca llevan datos de salud.</li></ul>
+<p>Ambos son empresas estadounidenses adheridas al Marco de Privacidad de Datos UE-EE. UU. y que ofrecen cláusulas contractuales tipo, por lo que puede haber transferencias internacionales con esas garantías.</p>
+<p>El encargado impone a los subencargados las mismas obligaciones de protección de datos y avisará en la app y en esta página de cualquier cambio, para que el responsable pueda oponerse dejando de usar estos servicios.</p>
+<h2>Obligaciones del responsable</h2>
+<ul><li>Tener base legal para tratar los datos de sus pacientes o clientes e informarles de este servicio.</li><li>Proteger su PIN, sus dispositivos y su código de recuperación.</li><li>Supervisar el tratamiento y comunicar al encargado cualquier instrucción adicional por escrito.</li></ul>
+<p>Versión 1, de 19 de octubre de 2026.</p>
+</main></body></html>
